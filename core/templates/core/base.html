@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %} Gipg</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+
+
+    <!-- Estilos y fuentes del template  -->
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'core/css/main.css'%}"/>
+    <link rel="stylesheet" href="{% static 'core/css/normalize.css'}"/>
+    <link rel="stylesheet"  href="{% static 'core/css/fontello.css'}">
+
+  </head>
+
+  <body>
+
+    <main class="login-design">
+
+      <div class="flanja"></div>
+      <br><br><br>
+      <div class="waves">
+        <img src="{% static 'core/img/login.jpeg' %}" alt="" />
+      </div>
+      <div class="login">
+        <div class="login-data">
+          <img src="{% static 'core/img/logo1.jpeg' %}" alt="" />
+          <h1>Inicio de Sesión</h1>
+          <form action="#" class="login-form">
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="email" name="email" id="email" required />
+                <span class="input-label">Correo Electrónico</span>
+                <i class="icon-usuario"></i>
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="password" name="password" id="password" required />
+                <span class="input-label">Contraseña</span>
+                <i class="icon-clave"></i>
+              </label>
+            </div>
+            <input type="submit" value="Iniciar Sesión" class="btn-login" />
+          </form>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+
+      <div class="container-footer">
+        <ul class="redes">
+          <li><a href=""><i class="icon-facebook"></i></a></li>
+          <li><a href=""><i class="icon-instagram"></i></a></li>
+          <li><a href=""><i class="icon-google"></i></a></li>
+          <li><a href=""><i class="icon-youtube"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2022 Todos los Derechos Reservados </p>
+      </div>
+    
+    </footer>
+    
+
+  </body>
+
+</html>
